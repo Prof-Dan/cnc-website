@@ -2,6 +2,7 @@ var controller = new ScrollMagic.Controller();
 
 var timeline1 = new TimelineMax();
 var timeline2 = new TimelineMax();
+var timeline3 = new TimelineMax();
 
 var scene1 = new ScrollMagic.Scene({
 
@@ -23,13 +24,26 @@ var tween1b = TweenMax.to('#ball', 1.5, {
 });
 var tween2 = new TweenMax.to('#ball', 1.5, {
   backgroundColor: 'green',
-  top: 2800,
+  top: 2750,
   ease: Linear.easeNone
 });
 var tween2b = new TweenMax.to('#ball', 1.5, {
 
   left: 50,
   ease: Quad.easeIn
+
+});
+var tween3 = new TweenMax.to('#ball', 1, {
+
+  top: 3950,
+  ease:Linear.easeNone,
+  backgroundColor: 'blue'
+
+});
+var tween3b = new TweenMax.to('#ball', 1, {
+
+  left:750,
+  ease:Quad.easeIn
 
 });
 var tween1Hold = new TweenMax.to('#ball', 1, {
@@ -63,6 +77,9 @@ timeline1.add(tween1b, '0');
 timeline2.add(tween2, '0');
 timeline2.add(tween2b, '0');
 
+timeline3.add(tween3, '0');
+timeline3.add(tween3b, '0');
+
 scene1.setTween(timeline1);
 scene1.addIndicators();
 
@@ -75,6 +92,13 @@ var scene2 = new ScrollMagic.Scene({
 
 scene2.setTween(timeline2);
 scene2.addIndicators();
+
+var scene3 = new ScrollMagic.Scene({
+
+  duration: 600,
+  offset: 3000
+
+}).setTween(timeline3).addIndicators();
 
 var scene1Hold = new ScrollMagic.Scene({
 
@@ -110,3 +134,4 @@ controller.addScene(bgScene2);
 controller.addScene(scene2);
 controller.addScene(bgScene3);
 controller.addScene(scene3Hold);
+controller.addScene(scene3);
