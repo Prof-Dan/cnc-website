@@ -6776,3 +6776,45 @@ button.close {
   height: 500px;
   width: 100%;
 }
+#ball {
+  height: 200;
+  width: 200;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  top: 120;
+  left: 50;
+}
+.scene {
+  position: absolute;
+}
+.scenepin {
+  position: absolute;
+  top: 1800;
+}
+body {
+  background-color: black;
+}
+#scene1 {
+  background-color: darkGreen;
+  top: 0px;
+  content: url(http://placehold.it/1200x1190);
+}
+#scene2 {
+  background-color: darkMagenta;
+  top: 1200px;
+  content: url(http://placehold.it/1200x890);
+}
+#scene3 {
+  background-color: darkSlateBlue;
+  top: 2400px;
+  content: url(http://placehold.it/1200x890);
+}
+#scene4 {
+  top: 3600px;
+  content: url(http://placehold.it/1200x890);
+}
+#scene5 {
+  top: 4800px;
+  content: url(http://placehold.it/1200x890);
+}
