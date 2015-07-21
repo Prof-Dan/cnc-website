@@ -1,6 +1,40 @@
 extends ./layout.jade
 
 block content
+
+  nav(class="navbar navbar-default navbar-fixed-top")
+    div(class="container")
+      div(class="navbar-header")
+        button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+          span(class="sr-only") Toggle navigation
+          span(class="icon-bar")
+          span(class="icon-bar")
+          span(class="icon-bar")
+        a(class="navbar-brand", href="#") Project name
+      div(id="navbar", class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+          li(class="active" )
+            a(href="#") Home
+          li
+            a(href="#about") About
+          li
+            a(href="#contact") Contact
+          li(class="dropdown")
+            a(href="#", class="dropdown-toggle", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Dropdown 
+              span(class="caret")
+            ul(class="dropdown-menu")
+              li
+                a(href="#") Action
+              li
+                a(href="#") Another action
+              li
+                a(href="#") Something else here
+              li(role="separator" class="divider")
+              li(class="dropdown-header") Nav header
+              li
+                a(href="#") Separated link
+              li
+                a(href="#") One more separated link
   
   div(class="jumbotron")
       div(class="container")
@@ -23,4 +57,28 @@ block content
           a(class="btn btn-default", href="#", role="button") View details &raquo;
       hr
       footer
-        p &copy; Company 2014
+        p &copy; Company 2014 
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
+        br
