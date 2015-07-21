@@ -1,0 +1,23 @@
+{
+  "name": "cnc-website",
+  "version": "0.0.1",
+  "description": "\"Skeleton for the cnc website\"",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Prof-Dan/cnc-website.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Prof-Dan/cnc-website/issues"
+  },
+  "homepage": "https://github.com/Prof-Dan/cnc-website#readme",
+  "devDependencies": {
+    "jade": "^1.11.0",
+    "less": "^2.5.1"
+  }
+}
