@@ -8,7 +8,7 @@ var enabled = true;
 
 var width = window.innerWidth;
 
-if(width <= 640) enabled = false;
+if(width <= 640) window.location.replace('./about.html');
 
 if(enabled) {
 
@@ -22,7 +22,6 @@ var scene1 = new ScrollMagic.Scene({
 Mousetrap.bind('p', function() {console.log($(window).scrollTop())});
 
 var tween1 = TweenMax.to('#ball', 1.5, {
-  backgroundColor: 'blue',
   top: 1550,
   ease: Linear.easeNone
 });
@@ -31,7 +30,6 @@ var tween1b = TweenMax.to('#ball', 1.5, {
   ease: Quad.easeIn
 });
 var tween2 = new TweenMax.to('#ball', 1.5, {
-  backgroundColor: 'green',
   top: 2750,
   ease: Linear.easeNone
 });
@@ -41,14 +39,13 @@ var tween2b = new TweenMax.to('#ball', 1.5, {
   ease: Quad.easeIn
 
 });
-var tween3 = new TweenMax.to('#ball', 1, {
+var tween3 = new TweenMax.to('#ball', 1.5, {
 
   top: 3950,
   ease:Linear.easeNone,
-  backgroundColor: 'blue'
 
 });
-var tween3b = new TweenMax.to('#ball', 1, {
+var tween3b = new TweenMax.to('#ball', 1.5, {
 
   left:0.7*width,
   ease:Quad.easeIn
@@ -78,10 +75,10 @@ var tween3Hold = new TweenMax.to('#ball', 1, {
   ease: Linear.easeNone
 
 });
-var textTween1 = new TweenMax.to('#textbox1', 1.5, {
+var textTween1 = new TweenMax.to('#textbox1', .4, {
 
   opacity:1,
-  delay:1
+  delay:.2
 
 });
 var textTween1b = new TweenMax.to('#textbox1', 2, {
@@ -100,26 +97,69 @@ var textTween2b = new TweenMax.to('#textbox2', 2, {
   opacity:1
 
 });
-var textTween3 = new TweenMax.to('#textbox3', 2, {
+var textTween3 = new TweenMax.to('#textbox3', 1.5, {
 
   top: 2900,
   ease: SlowMo.ease.config(0.7, 0.7, false)
 
 });
-var textTween3b = new TweenMax.to('#textbox3', 2, {
+var textTween3b = new TweenMax.to('#textbox3', 1.5, {
 
   opacity:1
 
 });
 
+var tween1Opacity = new TweenMax.to('#img2', 1.5, {
+
+  opacity:1,
+  ease: Linear.easeNone
+
+});
+var tween1Opacityb = new TweenMax('#img1', 1.5, {
+
+  opacity:0,
+  ease: Linear.easeNone
+
+});
+var tween2Opacity = new TweenMax.to('#img3', 1.5, {
+
+  opacity:1,
+  ease: Linear.easeNone
+
+});
+var tween2Opacityb = new TweenMax.to('#img2', 1.5, {
+
+  opacity:0,
+  ease: Linear.easeNone
+
+});
+var tween3Opacity = new TweenMax.to('#img4', 1.5, {
+
+  opacity:1,
+  ease: Linear.easeNone
+
+});
+var tween3Opacityb = new TweenMax.to('#img3', 1.5, {
+
+  opacity:0,
+  ease: Linear.easeNone
+
+});
+
 timeline1.add(tween1, '0');
 timeline1.add(tween1b, '0');
+timeline1.add(tween1Opacity, '0');
+timeline1.add(tween1Opacityb, '0');
 
 timeline2.add(tween2, '0');
 timeline2.add(tween2b, '0');
+timeline2.add(tween2Opacity, '0');
+timeline2.add(tween2Opacityb, '0');
 
 timeline3.add(tween3, '0');
 timeline3.add(tween3b, '0');
+timeline3.add(tween3Opacity, '0');
+timeline3.add(tween3Opacityb, '0');
 
 scene1.setTween(timeline1);
 scene1.addIndicators();

@@ -1,0 +1,38 @@
+extends ./layout.jade
+
+block head
+  link(href="about.css" rel="stylesheet")
+
+block content
+
+  nav(class="navbar navbar-default navbar-fixed-top")
+    div(class="container")
+      div(class="navbar-header")
+        button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+          span(class="sr-only") Toggle navigation
+          span(class="icon-bar")
+          span(class="icon-bar")
+          span(class="icon-bar")
+        a(class="navbar-brand", href="./index.html") HM Tech
+      div(id="navbar", class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+          li
+            a(href="./index.html") Home
+          li
+            a(href="./about.html") About
+          li(class='active')
+            a(href="#") Contact
+            
+  br
+  br
+  h1 Contact form
+  div(id='contactFormDiv')
+    form
+      p What industry are you in?
+      select
+        option(value='Building') Building
+        option(value='Designing') Designing
+        option(value='Architecture') Architecture
+      p Enter your email address.
+      input(type='text', id='email')
+      button(value='submit') Submit

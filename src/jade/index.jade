@@ -1,8 +1,28 @@
 extends ./layout.jade
 
+block head
+  link(href="main.css" rel="stylesheet")
+
 block content
-
-
+  
+  nav(class="navbar navbar-default navbar-fixed-top")
+    div(class="container")
+      div(class="navbar-header")
+        button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
+          span(class="sr-only") Toggle navigation
+          span(class="icon-bar")
+          span(class="icon-bar")
+          span(class="icon-bar")
+        a(class="navbar-brand", href="#") HM Tech
+      div(id="navbar", class="navbar-collapse collapse")
+        ul(class="nav navbar-nav")
+          li(class="active" )
+            a(href="#") Home
+          li
+            a(href="./about.html") About
+          li
+            a(href="./contact.html") Contact
+  
   div(id='scene1', class='scene')
   div(id='scene2', class='scene')
   div(id='scene2pin', class='scenepin')
@@ -10,6 +30,10 @@ block content
   div(id='scene4', class='scene')
 
   div(id='ball')
+    img(src='http://www.spxtech.com/wp-content/uploads/File-Folder-300x300.png', id='img1', class='img')
+    img(src='http://www.trashedgraphics.com/wp-content/uploads/2013/10/cube.png', id='img2', class='img')
+    img(src='http://bobcad.com/wp-content/uploads/2013/07/HAASVF3-MACHINE-300x266.png', id='img3', class='img')
+    img(src='http://www.spxtech.com/wp-content/uploads/File-Folder-300x300.png', id='img4', class='img')
   div(id='textbox1', class='textbox') Scroll down...
   div(id='textbox2', class='textbox') Example text explaining what this animation actually means.
   div(id='textbox3', class='textbox') More example text
