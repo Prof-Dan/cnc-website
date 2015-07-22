@@ -6781,6 +6781,7 @@ button.close {
   border-width: 20px;
   border-color: lightgrey;
   background-color: lightgrey;
+  border-radius: 14px;
 }
 #textbox1 {
   top: 150px;
