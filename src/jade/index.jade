@@ -2,121 +2,22 @@ extends ./layout.jade
 
 block content
 
-  nav(class="navbar navbar-default navbar-fixed-top")
-    div(class="container")
-      div(class="navbar-header")
-        button(type="button", class="navbar-toggle collapsed", data-toggle="collapse", data-target="#navbar", aria-expanded="false", aria-controls="navbar")
-          span(class="sr-only") Toggle navigation
-          span(class="icon-bar")
-          span(class="icon-bar")
-          span(class="icon-bar")
-        a(class="navbar-brand", href="#") Project name
-      div(id="navbar", class="navbar-collapse collapse")
-        ul(class="nav navbar-nav")
-          li(class="active" )
-            a(href="#") Home
-          li
-            a(href="#about") About
-          li
-            a(href="#contact") Contact
-          li(class="dropdown")
-            a(href="#", class="dropdown-toggle", data-toggle="dropdown", role="button", aria-haspopup="true", aria-expanded="false") Dropdown 
-              span(class="caret")
-            ul(class="dropdown-menu")
-              li
-                a(href="#") Action
-              li
-                a(href="#") Another action
-              li
-                a(href="#") Something else here
-              li(role="separator" class="divider")
-              li(class="dropdown-header") Nav header
-              li
-                a(href="#") Separated link
-              li
-                a(href="#") One more separated link
-                
-  div(id="myCarousel", class="carousel slide", data-ride="carousel")
-    ol(class="carousel-indicators")
-      li(data-target="#myCarousel", data-slide-to="0", class="active")
-      li(data-target="#myCarousel", data-slide-to="1")
-      li(data-target="#myCarousel", data-slide-to="2")
-    div(class="carousel-inner", role="listbox")
-      div(class="item active")
-        img(class="first-slide" src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", alt="First slide")
-        div(class="container")
-          div(class="carousel-caption")
-            h1 Example headline.
-            p Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-            p
-              a(class="btn btn-lg btn-primary", href="#", role="button") Sign up today
-      div(class="item")
-        img(class="second-slide", src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", alt="Second slide")
-        div(class="container")
-          div(class="carousel-caption")
-            h1 Another example headline.
-            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a(class="btn btn-lg btn-primary", href="#", role="button") Learn more
-      div(class="item")
-        img(class="third-slide", src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==", alt="Third slide")
-        div(class="container")
-          div(class="carousel-caption")
-            h1 One more for good measure.
-            p Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.
-            p
-              a(class="btn btn-lg btn-primary", href="#", role="button") Browse gallery
-    a(class="left carousel-control", href="#myCarousel", role="button", data-slide="prev")
-      span(class="glyphicon glyphicon-chevron-left", aria-hidden="true")
-      span(class="sr-only") Previous
-    a(class="right carousel-control", href="#myCarousel", role="button", data-slide="next")
-      span(class="glyphicon glyphicon-chevron-right", aria-hidden="true")
-      span(class="sr-only") Next
-  
-  div(class="jumbotron")
-      div(class="container")
-        h1 Hello, world!
-        p This is a template for a simple marketing or informational website. It includes a large callout called a jumbotron and three supporting pieces of content. Use it as a starting point to create something more unique.
-        a(class="btn btn-primary btn-lg", href="#", role="button") Learn more &raquo;
-    div(class="container")
-      div(class="row")
-        div(class="col-md-4")
-          h2 Heading
-          p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-          a(class="btn btn-default", href="#", role="button") View details &raquo;  
-        div(class="col-md-4")
-          h2 Heading
-          p Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.
-          a(class="btn btn-default", href="#", role="button") View details &raquo; 
-        div(class="col-md-4")
-          h2 Heading
-          p Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
-          a(class="btn btn-default", href="#", role="button") View details &raquo;
-      hr
-      footer
-        p &copy; Company 2014 
-        // Just to demonstrate scrolling down with the navigation bar
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
-        br
+
+  div(id='scene1', class='scene')
+  div(id='scene2', class='scene')
+  div(id='scene2pin', class='scenepin')
+  div(id='scene3', class='scene')
+  div(id='scene4', class='scene')
+
+  div(id='ball')
+  div(id='textbox1', class='textbox') Scroll down...
+  div(id='textbox2', class='textbox') Example text explaining what this animation actually means.
+  div(id='textbox3', class='textbox') More example text
+
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js')
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.3/ScrollMagic.js')
+  script(src='js/animation.gsap.js')
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.17.0/TweenMax.min.js')
+  script(src='http://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js')
+  script(src='https://cdnjs.cloudflare.com/ajax/libs/mousetrap/1.4.6/mousetrap.js')
+  script(src='js/example.js')
