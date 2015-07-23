@@ -4,11 +4,11 @@ form.onsubmit = function() {
 
   var email = document.getElementById('inputEmail').value;
   var industry = document.getElementById('industrySelect').value;
+  var message = document.getElementById('message').value;
 
   console.log('Email:', email);
   console.log('Industry:', industry);
-
-  window.location.replace('./thankyou.html');
-  return;
+  console.log('Message', message);
+  console.log('Timestamp:', new Date().toISOString());
 
 };

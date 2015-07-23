@@ -57,6 +57,12 @@ var tween1Hold = new TweenMax.to('#ball', 1, {
   ease: Linear.easeNone
 
 });
+var tweenScene1 = new TweenMax.to('#scene1', 1, {
+
+  top: 300,
+  ease: Linear.easeNone
+
+});
 var tweenScene2 = new TweenMax.to('#scene2', 1, {
 
   top: 1500,
@@ -83,7 +89,9 @@ var textTween1 = new TweenMax.to('#textbox1', .4, {
 });
 var textTween1b = new TweenMax.to('#textbox1', 2, {
 
-  opacity: 0
+  opacity: 0,
+  top: 360,
+  ease: Linear.easeNone
 
 });
 var textTween2 = new TweenMax.to('#textbox2', 2, {
@@ -197,14 +205,14 @@ var scene3Hold = new ScrollMagic.Scene({
 
 var bgScene2 = new ScrollMagic.Scene({
 
-  duration:600,
+  duration:750,
   offset:1200
 
 }).setTween(tweenScene2).addIndicators();
 
 var bgScene3 = new ScrollMagic.Scene({
 
-  duration:600,
+  duration:750,
   offset:2400
 
 }).setTween(tweenScene3).addIndicators();
@@ -244,6 +252,14 @@ var textScene3b = new ScrollMagic.Scene({
 
 }).setTween(textTween3b).addIndicators();
 
+var bgScene1 = new ScrollMagic.Scene({
+
+  offset:0,
+  duration:750
+
+}).setTween(tweenScene1).addIndicators();
+
+controller.addScene(bgScene1);
 controller.addScene(scene1);
 controller.addScene(scene1Hold);
 controller.addScene(textScene1);
