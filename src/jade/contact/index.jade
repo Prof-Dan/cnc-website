@@ -1,7 +1,7 @@
-extends ./layout.jade
+extends ../layout.jade
 
 block head
-  link(href="about.css" rel="stylesheet")
+  link(href="../about.css" rel="stylesheet")
 
 block content
 
@@ -26,13 +26,18 @@ block content
   br
   br
   h1 Contact form
-  div(id='contactFormDiv')
-    form
-      p What industry are you in?
-      select
-        option(value='Building') Building
-        option(value='Designing') Designing
-        option(value='Architecture') Architecture
-      p Enter your email address.
-      input(type='text', id='email')
-      button(value='submit') Submit
+  div(id='contactFormDiv', class='col-md-6')
+    form(id='contactForm')
+      div(class="form-group")
+        label(for="inputEmail") Email address
+        input(type="email", class="form-control", id="inputEmail", placeholder="Email")
+      div(class='form-group')
+        label(for='industrySelect') Industry:
+        select(class="form-control", id='industrySelect')
+          option Building
+          option Architecture
+          option Design
+      button(type="submit", class="btn btn-default") Submit
+  
+  script(src="../bootstrap.min.js")
+  script(src='../js/formSubmit.js')
