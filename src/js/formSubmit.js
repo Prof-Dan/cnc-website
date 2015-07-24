@@ -1,14 +1,13 @@
-var form = document.getElementById('contactForm');
+var form = document.getElementById('contactForm')
 
-form.onsubmit = function() {
+form.onsubmit = function () {
+  var email = document.getElementById('inputEmail').value
+  var industry = document.getElementById('industrySelect').value
+  var message = document.getElementById('message').value
 
-  var email = document.getElementById('inputEmail').value;
-  var industry = document.getElementById('industrySelect').value;
-  var message = document.getElementById('message').value;
+  console.log('Email:', email)
+  console.log('Industry:', industry)
+  console.log('Message', message)
+  console.log('Timestamp:', new Date().toISOString())
 
-  console.log('Email:', email);
-  console.log('Industry:', industry);
-  console.log('Message', message);
-  console.log('Timestamp:', new Date().toISOString());
-
-};
+}
